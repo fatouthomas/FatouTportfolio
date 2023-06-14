@@ -1,0 +1,186 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style du corps de la page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e5c5ac;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  /* CSS */
+@keyframes colorChange {
+    0% {
+      color: yellow;
+    }
+    25% {
+      color: yellowgreen;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: orange;
+    }
+    100% {
+      color: purple;
+    }
+  }
+  
+  h1 {
+    animation: colorChange 5s infinite;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e5c5ac;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #e5c5ac;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Section "Mes Projets" */
+  .mes-projets {
+    text-align: center;
+  }
+  
+  .mes-projets h2 {
+    margin-bottom: 20px;
+  }
+  
+  .mes-projets .image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mes-projets .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .mes-projets .image-container a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .mes-projets .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .mes-projets .image-container:hover a {
+    opacity: 1;
+  }
+  
+  /* Section "Ma Philosophie" */
+  .ma-philosophie {
+    text-align: center;
+  }
+  
+  .ma-philosophie h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Section "Prise de Contact" */
+  .prise-de-contact {
+    text-align: center;
+  }
+  
+  .prise-de-contact h2 {
+    margin-bottom: 20px;
+  }
+  
+  .prise-de-contact form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .prise-de-contact label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .prise-de-contact input,
+  .prise-de-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .prise-de-contact button {
+    background-color: #ffffff;
+    color: #
+  /* Styles pour la barre de défilement */
+::-webkit-scrollbar {
+    width: 10px; /* largeur de la barre de défilement */
+  }
+  
+  /* Styles pour la poignée (thumb) de la barre de défilement */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* couleur de fond de la poignée */
+  }
+  
+  /* Styles pour la zone de la barre de défilement */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* couleur de fond de la zone */
+  }
+  
+  /* Styles pour la poignée lorsqu'elle est survolée */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* couleur de fond de la poignée survolée */
+  }
+  

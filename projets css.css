@@ -1,0 +1,32 @@
+/* CSS.css */
+
+/* Styles généraux */ 
+.mes-projets {
+    padding: 20px;
+    background-color: #e5c5ac;
+  }
+  
+  .mes-projets h2 {
+    text-align: center;
+  }
+  
+  .image-container {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .image-container img {
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* Media queries pour la mise en page responsive */
+  @media screen and (max-width: 768px) {
+    .image-container {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  
